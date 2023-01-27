@@ -4,94 +4,156 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web-server</title>
+    <title>Internet Engineering Class Home</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" type="image/png" href="./images/logo.png" />
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
 </head>
+
 <body>
+  <div class="navbar">
+    <a href="#menuactivation"><button ><i class="gg-menu-right"></i></button></a>
+  </div>
+  <div class="menu" id="menuactivation">
+    <div class="closeMenu">
+      <a class="menuClose" href="#clclose">&times;</a>
+    </div>
+    <div class="menubody">
+      <h2>Menu</h2>
+      <div class="menu-container">
+        <div class="menuItem"><a href="#header-id">Header</a></div>
+        <div class="menuItem"><a href="#lectures-id">Lectures</a></div>
+        <div class="menuItem"><a href="#books-id">Book</a></div>
+        <div class="menuItem"><a href="#footer-id">Footer 4</a></div>
+      </div>
+    </div>
+  </div>
+
     <div class="container">
-        <div class="header">
-            <div id="header">
-                <img src="images/Header.jpg" alt="Header background">
-                <h1>Heading</h1>
-                <button><a href="#Related Books">Related Books</a></button>
-            </div>           
-        </div>
-
-
-        
-        <div class="lectures">
+      <div class="header", id="header-id">
+        <header>
+            <h1>Web Development</h1>
+            <button><a href="#relatedbooks">Related Books</a></button>
+        </header>
+      </div>
+      
+        <div class="lectures", id="lectures-id">
             <div class="cards-container">
-                
                 <div class="card">
-                    <img src="images/css_icon.png" alt="Card 2">
-                    <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo reiciendis nobis deleniti voluptas quis ex obcaecati quaerat tempore nulla ipsum dolore nam provident expedita eum sapiente dignissimos, id nihil sequi.</h2>
+                    <img src="images/css_icon.png" alt="Card 1">
+                    <h2>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</h2>
                 </div>
                 <div class="card">
-                    <img src="images/http_icon.png" alt="Card 2">
-                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore numquam vel ex optio, debitis delectus harum commodi doloremque laudantium officiis sequi aut necessitatibus neque voluptates ad sapiente, quae ipsa incidunt!</h2>
+                  <img src="images/go_icon.png" alt="Card 2">
+                    <h2>Go is a statically typed, compiled high-level programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson. It is syntactically similar to C, but with memory safety, garbage collection, structural typing, and CSP-style concurrency.</h2>
                 </div>
                 <div class="card">
-                    <img src="images/go_icon.png" alt="Card 2">
-                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique veniam id qui quisquam eius, dolorem et ipsum est, ea dolore inventore aut cumque natus illum. Esse nam nostrum amet velit.</h2>
+                  <img src="images/http_icon.png" alt="Card 3">
+                    <h2>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</h2>
                 </div>
                 <div class="card">
-                    <img src="images/js_icon.png" alt="Card 2">
-                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique veniam id qui quisquam eius, dolorem et ipsum est, ea dolore inventore aut cumque natus illum. Esse nam nostrum amet velit.</h2>
+                  <img src="images/js_icon.png" alt="Card 4">
+                    <h2>JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries.</h2>
                 </div>
             </div>                          
         </div>
 
+        <!-- ------------------------ -->
+      
+        <div class="books", id="books-id">
+            <div id="popup1" class="overlay">
+                <div class="popup">
+                  <img src="images/book1_.jpg" alt="Avatar" style="width:200px;height:300px;">
+                  <h2>book1</h2>
+                  <a class="close" href="#relatedbooks">&times;</a>
+                  <div class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsam suscipit officia tempore velit dolorum aliquid sunt quod esse nemo? Deleniti dolores perspiciatis, earum et sapiente sequi alias illo animi!
+                  </div>
+                  <div class="amazon"><a href="http://amazon.com/"><button>Amazon</button></a></div>
+                </div>
+          </div>
 
-        <div class="books">
-            <div class="book-container">
+          <div id="popup2" class="overlay">
+            <div class="popup">
+              <img src="images/book2.jpg" alt="Avatar" style="width:200px;height:300px;">
+
+              <h2>book2</h2>
+              <a class="close" href="#relatedbooks">&times;</a>
+              <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eligendi tempore eos qui voluptates deserunt eveniet neque quasi officiis quisquam ad ratione quod fugit quos, necessitatibus et facere molestiae aperiam?
+              </div>
+              <div class="amazon"><a href="http://amazon.com/"><button>Amazon</button></a></div>
+            </div>
+          </div>
+
+          <div id="popup3" class="overlay">
+            <div class="popup">
+              <img src="images/book3.jpg" alt="Avatar" style="width:200px;height:300px;">
+
+              <h2>book3</h2>
+              <a class="close" href="#relatedbooks">&times;</a>
+              <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolor, praesentium sequi in animi modi, veniam quidem dolore expedita quibusdam, quod nam iste quaerat cum commodi error beatae necessitatibus voluptatibus.
+              </div>
+              <div class="amazon"><a href="http://amazon.com/"><button>Amazon</button></a></div> 
+            </div>
+          </div>
+
+            <div class="book-container" id="relatedbooks">
                 <h1 class="hover-2">
-                  TITLE
+                  MOST POPULAR BOOKS
                 </h1>
                 <div class="card-container">
                   
                   <div class="flip-card">
                     <div class="flip-card-inner">
                       <div class="flip-card-front">
-                        <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                        <img src="images/book1_.jpg" alt="Avatar" style="width:200px;height:300px;">
                       </div>
                       <div class="flip-card-back">
-                        <h1>John Doe</h1>
-                        <p>Architect & Engineer</p>
-                        <p>We love that guy</p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, libero voluptates ipsum officiis ab atque temporibus iste, dolore molestiae dolorem repellat rem sed ex itaque adipisci qui exercitationem. Ullam, saepe!
+                        <p>Price:25$</p>
+                        <button1><a href="#popup1">Buy Now!</a></button1>
                       </div>
                     </div>
                   </div>
                   <div class="flip-card">
                     <div class="flip-card-inner">
                       <div class="flip-card-front">
-                        <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                        <img src="images/book2.jpg" alt="Avatar" style="width:200px;height:300px;">
                       </div>
                       <div class="flip-card-back">
-                        <h1>John Doe</h1>
-                        <p>Architect & Engineer</p>
-                        <p>We love that guy</p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis eius laboriosam facilis, modi ducimus tempora explicabo necessitatibus excepturi amet quo eligendi perspiciatis iure optio eos libero, accusamus expedita quidem porro!
+                        <p>Price:60$</p>
+                        <button1><a href="#popup2">Buy Now!</a></button1>
                       </div>
                     </div>
                   </div> 
                   <div class="flip-card">
                     <div class="flip-card-inner">
                       <div class="flip-card-front">
-                        <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                        <img src="images/book3.jpg" alt="Avatar" style="width:200px;height:300px;">
                       </div>
                       <div class="flip-card-back">
-                        <h1>John Doe</h1>
-                        <p>Architect & Engineer</p>
-                        <p>We love that guy</p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nesciunt ex voluptas, consectetur reprehenderit rerum facilis corrupti ipsum et reiciendis provident, ad impedit temporibus. Sapiente at repellat consequuntur fugiat a? 
+                        <p>Price:97$</p>
+                        <button1><a href="#popup3">Buy Now!</a></button1>
                       </div>
                     </div>
                   </div>  
-
                 </div>
               </div>
-              
-        </div>
-        <div class="footer">Footer</div>
-      </div>      
+            </div>
+              <div class="columns footer", id="footer-id">
+                <div class="column">
+                  <a class='link' href="https://yalda-eftekhari.github.io/web-midterm/">class info</a> <br>
+                  <a class='link' href="https://yalda-eftekhari.github.io/web-midterm/">contact us</a> <br>
+                  <a class='link' href="https://yalda-eftekhari.github.io/web-midterm/">privacy policy</a> <br>
+                  <a class='link' href="https://yalda-eftekhari.github.io/web-midterm/">terms</a><br>
+                </div>
+                <div class="column">
+                  <p> Created by Yalda Eftekhari</p>
+                </div>
+              </div>
+    </div>      
 </body>
 </html>
